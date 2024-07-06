@@ -1,11 +1,11 @@
 # Cookies in APIs
 
-## Learning Goals
+## Learning Goalss
 
 - Configure a Flask API to use cookies.
 - Use the developer tools to inspect cookies.
 
-***
+---
 
 ## Key Vocab
 
@@ -21,7 +21,7 @@
 - **Cookie**: data from a web application that is stored by the browser. The
   application can retrieve this data during subsequent sessions.
 
-***
+---
 
 ## Introduction
 
@@ -29,7 +29,7 @@ Since cookies are such an important part of most web applications, Flask has
 excellent support for cookies and sessions baked in. To test these out, let's
 make a simple API to display our cookie and session data.
 
-***
+---
 
 ## Working With Sessions and Cookies
 
@@ -83,8 +83,7 @@ The first time a user makes a request to this API, Flask will include the
 will instruct the browser to store these values in memory and send them with any
 future requests on this domain.
 
-![set-cookie headers](
-    https://curriculum-content.s3.amazonaws.com/python/python-p4-cookies-in-flask-api-1.png)
+![set-cookie headers](https://curriculum-content.s3.amazonaws.com/python/python-p4-cookies-in-flask-api-1.png)
 
 After making the request, you should see something like this in the browser:
 
@@ -116,8 +115,7 @@ developer tools, find the **Application** tab, and go to the **Cookies** section
 (under "Storage" in the pane on the left). There, you'll find all the cookies
 for our domain (`http://localhost:5555`):
 
-![cookies in dev tools](
-    https://curriculum-content.s3.amazonaws.com/python/python-p4-cookies-in-flask-api-2.png)
+![cookies in dev tools](https://curriculum-content.s3.amazonaws.com/python/python-p4-cookies-in-flask-api-2.png)
 
 Cookies can be edited directly in the dev tools. Try changing the value of the
 `mouse` key to something new. Then refresh the page in the browser to
@@ -125,7 +123,7 @@ make another request. If you try to edit the `session` cookie, on the other
 hand, it will have no effect thanks to Flask security features like signing and
 encryption.
 
-***
+---
 
 ## Conclusion
 
@@ -135,7 +133,7 @@ automatically passing additional data with each request using the headers. We
 can get a better sense of how cookies are being used by websites using the
 browser dev tools.
 
-***
+---
 
 ## Check For Understanding
 
